@@ -31,19 +31,17 @@ JSON (for file-based storage)
 ## How to Run
 Clone the repo:
 
-bash
 Copy code
 git clone https://github.com/yourusername/todo-list.git
 cd todo-list
+
 Run the script:
 
-bash
-Copy code
-python todo.py
-
+python "To-do list.py
 ## Learning Outcome
 Through this mini-project, I practiced:
-1. File handling in Python (open, read, write)
-2 .JSON serialization (json.dump, json.load)
-3. Menu-driven CLI applications
-4. Implementing basic CRUD logic
+
+-File handling in Python (open, read, write)
+-JSON serialization (json.dump, json.load)
+-Menu-driven CLI applications
+-Implementing basic CRUD logic
