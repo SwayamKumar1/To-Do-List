@@ -1,47 +1,65 @@
-# 📝 To-Do List (Mini-Project)
+# 📝 To-Do List App (Python)
 
-A simple command-line **To-Do List Manager** built with Python.  
-This project demonstrates **JSON file handling**, **data persistence**, and basic CRUD operations (Create, Read, Update, Delete).
-
----
-
-## 📌 Features
-- ✅ Add new tasks  
-- 📋 Show all tasks with status (✓ done / ✗ pending)  
-- ✏️ Mark tasks as done  
-- ❌ Delete tasks  
-- 💾 Persistent storage using `tasks.json` (tasks are saved even after the program exits)
+A simple **command-line To-Do List application** built in Python.  
+It helps you stay organized by allowing you to add, delete, search, filter, and mark tasks as done — with support for priorities and due dates.
 
 ---
 
-## ⚙️ How It Works
-- All tasks are stored as dictionaries inside a list, like:
-  ```json
-  [
-    {"title": "Buy milk", "done": false},
-    {"title": "Finish homework", "done": true}
-  ]
-The list is written to and read from tasks.json using Python’s built-in json module.
+## 🚀 Features
+- Add new tasks with **priority (High/Medium/Low)** and **due date**
+- View all tasks with status ✅ or ❌
+- Search tasks by keyword
+- Filter tasks by:
+  - Priority
+  - Status (done/pending)
+  - Due date
+- Mark tasks as done
+- Delete tasks
+- Data is saved in **JSON file**, so tasks persist even after program exit
 
-## Tech Stack
-Python 3
+---
 
-JSON (for file-based storage)
+## 📂 Project Structure
+todo-app/
+│-- todo.py # Main program file
+│-- tasks.json # Stores all tasks data
+│-- README.md # Project documentation
 
-## How to Run
-Clone the repo:
-
+yaml
 Copy code
-git clone https://github.com/yourusername/todo-list.git
-cd todo-list
 
-Run the script:
+---
 
-python "To-do list.py
-## Learning Outcome
-Through this mini-project, I practiced:
+## 🛠️ How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/todo-app.git
+Go into the folder:
 
--File handling in Python (open, read, write)
--JSON serialization (json.dump, json.load)
--Menu-driven CLI applications
--Implementing basic CRUD logic
+bash
+Copy code
+cd todo-app
+Run the program:
+
+bash
+Copy code
+python todo.py
+💡 Example Usage
+pgsql
+Copy code
+--- To-Do List Menu ---
+1. Show tasks
+2. Add task
+3. Mark task as done
+4. Search tasks
+5. Filter tasks
+6. Delete task
+7. Exit
+
+## 📌 Future Improvements
+
+- Add colored output for better visuals
+
+- Add categories/tags for tasks
+
+- Convert into a GUI-based app using Tkinter or Flask for web
